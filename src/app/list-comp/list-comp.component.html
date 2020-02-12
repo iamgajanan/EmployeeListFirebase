@@ -1,0 +1,18 @@
+
+<!-- <div *ngIf="!valuesa"> -->
+    <h2>  List of Employees </h2>
+<div class="row">
+ <div class="col-3" *ngFor="let data of schooldata">
+     <div> Id:  {{data.id }} </div> <br>
+     <div> Name: {{data.name | uppercase}}</div><br> 
+     <div>Address: {{data.address}} </div> <br>
+     <!-- <button class="del"  (click)="onDelete(data)">Delete</button> &nbsp;
+     <button type="submit" (click)="OnEdit(data)">Edit</button><br><br> -->
+     
+     <br>
+ </div>
+</div>
+
+<!-- </div> -->
+<!-- <app-update *ngIf="valuesa" [editdata]="editdata"  (upevent)="!valuesa=$event"></app-update> -->
+
